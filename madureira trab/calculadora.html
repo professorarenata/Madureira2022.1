@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="madureira/css">
+  <link rel="shortcut icon" href="imagens/calculator.svg" type="image/x-icon">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <header>
+    <h1 class="text-info">Calculadora <br><br> </h1>
+  </header>
+  <section>
+    <script>
+      function soma(form1) {
+        a = new Number(form1.t1.value);
+        b = new Number(form1.t2.value);
+        c = new Number(a + b);
+        alert("A soma dos numeros?:  " + c);
+      }
+
+      function sub(form1) {
+        a = new Number(form1.t1.value);
+        b = new Number(form1.t2.value);
+        c = new Number(a - b);
+        alert("A subtração dos números?:  " + c);
+      }
+      function mult(form1) {
+        a = new Number(form1.t1.value);
+        b = new Number(form1.t2.value)
+        c = new Number(a * b);
+        alert("A multiplicação dos números?:" + c);
+      }
+      function divisor(form1) {
+        a = new Number(form1.t1.value);
+        b = new Number(form1.t2.value)
+        c = new Number(a / b);
+        alert("A divisão dos números?:" + c);
+      }
+
+    </script>
+
+    <div class="container mt-5">
+
+ 
+      <center >
+        
+        <h3 class="text-light  mt-2">
+          <h2 class="text-info">Calcular:</h2>
+          <form name="form1">
+            <input type="text" name="t1" placeholder="Digite um número"><br><br>
+          
+            <div class="container">
+
+              <input type="text" name="t2" placeholder="Digite outro número"><br><br>
+              <input type="button" class="btn btn-dark" name="b1" value="+" onClick="soma(form1)">
+              <input type="button" class="btn btn-dark" name="b2" value="-" onClick="sub(form1)">
+              <input type="button" class="btn btn-dark" name="b3" value="x" onClick="mult(form1)">
+              <input type="button" class="btn btn-dark" name="b4" value="÷" onClick="divisor(form1)">
+              <br><br>
+
+            </div>
+
+          </form>
+        </h3>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+
+
+
+</body>
+
+</html>

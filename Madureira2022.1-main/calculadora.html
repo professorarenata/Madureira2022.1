@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        .newcolor{
+          color: #fcf808;
+        }
+
+        .newfont{
+          font-family: 'Comic Neue',cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+  <h1>oi!</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+<head>
+
+  <script>
+    function soma(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a + b);
+      alert("A soma dos n�meros �:  " + c);
+    }
+
+    function sub(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a - b);
+      alert("A subtra��o dos n�meros �:  " + c);
+    }
+
+    function div(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a / b);
+      alert("A divisão dos números é:" + c)
+
+    }
+
+    function mult(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a * b);
+      alert("A multiplicação dos números é:" + c)
+    }
+  </script>
+</head>
+
+<body class="newfont">
+    
+ 
+
+  <h1 class="bg-dark text-center text-light" >Calculadora <br><br> </h1>
+  <h3 class="text-center text-primary">
+    Digite um número:
+    <form name="form1" >
+      <input type="text" name="t1"><br>
+      Digite outro número:<br>
+      <input type="text" name="t2"><br><br>
+      <input type="button" name="b1" class="text-light hover bg-primary" style="height:50px; width: 50px; " value="+"
+        onClick="soma(form1)">
+      <input type="button" name="b2" class="bg-primary text-light " style="height:50px; width: 50px;"" value=" -"
+        onClick="sub(form1)">
+      <input type="button" name="b3" class="bg-primary text-light " style="height:50px; width: 50px;" value="*"
+        onClick="mult(form1)">
+      <input type="button" name="b4" class="bg-primary text-light " style="height:50px; width: 50px;" value="/"
+        onClick="div(form1)">
+      <br><br>
+      <br>
+
+    </form>
+  </h3>
+
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 <html>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <head>
 <script>
 function soma(form1)
@@ -7,7 +6,7 @@ function soma(form1)
    a=new Number(form1.t1.value);
    b=new Number(form1.t2.value);
    c=new Number(a+b);
-   alert("A soma dos n�meros �:  "+c);
+   alert("A soma dos números :  "+c);
 }
 
 function sub(form1)
@@ -15,25 +14,39 @@ function sub(form1)
    a=new Number(form1.t1.value);
    b=new Number(form1.t2.value);
    c=new Number(a-b);
-   alert("A subtra��o dos n�meros �:  "+c);
+   alert("A subtração dos números :  "+c);
+}
+function mult(form1)
+{
+  a=new Number(form1.t1.value);
+  b=new Number(form1.t2.value);
+  c=new Number(a*b);
+  alert("A multiplicação dos números : "+c);
+}
+function div(form1)
+{
+  a=new Number(form1.t1.value);
+  b=new Number(form1.t2.value);
+  c=new Number(a/b);
+  alert("A divisão dos números : "+c)
 }
 </script>
 </head>
 
-<body class="bg-dark text-light">
-<center><h1>Calculadora <br><br> </h1>
+<body>
+<center><h1>CALCULADORA <br><br> </h1>
   <h3>
 Digite um número:
 <form name="form1">
-  <input type="text" name="t1" class="bg-secondary"><br>
+  <input type="text" name="t1"><br>
   Digite outro número:<br>
-  <input type="text" name="t2" class="bg-secondary"><br><br>
-  <input class="bg-secondary text-light" type="button" name="b1" value="+" onClick="soma(form1)">
-  <input class="bg-secondary text-light" type="button" name="b2" value="-" onClick="sub(form1)">
-  <input class="bg-secondary text-light" type="button" name="b3" value="*">
-  <input class="bg-secondary text-light" type="button" name="b4" value="/">
+  <input type="text" name="t2"><br><br>
+  <input type="button" name="b1" value="+" onClick="soma(form1)">
+  <input type="button" name="b2" value="-" onClick="sub(form1)">
+  <input type="button" name="b3" value="*" onClick="mult(form1)">
+  <input type="button" name="b4" value="/" onClick="div(form1)">
   <br><br>
-  <br>
+  
   
 </form>
  </h3>

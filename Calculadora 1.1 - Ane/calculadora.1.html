@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.1.css">
+</head>
+
+<body>
+
+    <h1>CALCULADORA</h1>
+
+    <table>
+
+    Digite um número:
+    <form name="n1">
+        <input type="text" name="t1"> <br>
+    Digite outro número:
+        <input type="text" name="t2"> <br>
+        
+        <input type="button" name="b1" value="+" onClick="soma(n1)">
+        <input type="button" name="b2" value="-" onClick="sub(n1)">
+        <input type="button" name="b3" value="*" onClick="mult(n1)">
+        <input type="button" name="b4" value="/" onClick="div(n1)">
+
+    </form>
+
+    </table>
+
+    <script>
+        function soma(n1) {
+            a = new Number(n1.t1.value);
+            b = new Number(n1.t2.value);
+            c = new Number(a + b);
+
+            alert("A soma dos números é: " + c)
+        }
+        function sub(n1) {
+            a = new Number(n1.t1.value);
+            b = new Number(n1.t2.value);
+            c = new Number(a - b);
+
+            alert("A subtração dos números é: " + c)
+        }
+        function mult(n1) {
+            a = new Number(n1.t1.value);
+            b = new Number(n1.t2.value);
+            c = new Number(a * b);
+
+            alert("A divisão dos números é: " + c)
+        }
+        function div(n1) {
+            a = new Number(n1.t1.value);
+            b = new Number(n1.t2.value);
+            c = new Number(a / b);
+
+            alert("A multiplicação dos números é: " + c)
+        }
+    </script>
+</body>
+
+</html>

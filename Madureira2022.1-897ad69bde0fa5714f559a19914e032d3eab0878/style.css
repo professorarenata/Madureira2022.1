@@ -1,0 +1,13 @@
+*{
+    max-width: 500%;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+    color: aliceblue;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.operações{
+    color: rgb(4, 0, 0);
+    background-color: rgb(232, 221, 221);
+    
+}

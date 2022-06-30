@@ -1,80 +1,68 @@
-<html>
-<head>
-  <style>
-     *{
-            margin: 0;
-            padding: 0;
-        }
-        .fundo{
-            background-image: linear-gradient(45deg,black, crimson);
-            height: 100vh;
-            color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .button{
-            width: 50px;
-            height: 50px;
-            font-size: 25px;
-            cursor: pointer;
-            margin: 3px;
-            background-color: rgb(31,31,31);
-            border: none;
-            color: #fff;
-        }
-        .button:hover{
-            background-color: black;
-        }
-        .calculadora{
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.8);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            border-radius: 15px;
-            padding: 15px;
-        }
-  </style>
-<script>
-function soma(form1)
-{
-   a=new Number(form1.t1.value);
-   b=new Number(form1.t2.value);
-   c=new Number(a+b);
-   alert("A soma dos números é:  "+c);
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-light">
+    
+      <head>
+      <script>
+      function soma(form1)
+      {
+         a=new Number(form1.t1.value);
+         b=new Number(form1.t2.value);
+         c=new Number(a+b);
+         alert("A soma dos numeros é:  "+c);
+      }
+      
+      function sub(form1)
+      {
+         a=new Number(form1.t1.value);
+         b=new Number(form1.t2.value);
+         c=new Number(a-b);
+         alert("A subtração dos numeros é:  "+c);
+      }
+      function mult(form1)
+      {
+         a=new Number(form1.t1.value);
+         b=new Number(form1.t2.value);
+         c=new Number(a*b);
+         alert("A multiplicação dos numeros é:  "+c);
+      }
+      function div(form1)
+      {
+         a=new Number(form1.t1.value);
+         b=new Number(form1.t2.value);
+         c=new Number(a/b);
+         alert("A divisão dos numeros é:  "+c);
+      }
 
-function sub(form1)
-{
-   a=new Number(form1.t1.value);
-   b=new Number(form1.t2.value);
-   c=new Number(a-b);
-   alert("A subtração dos números é:  "+c);
-}
-</script>
-</head>
 
-<body>
-  <div class="fundo">
-    <div class="calculadora">
-<h1>Calculadora <br><br> </h1>
-  <h3>
-Digite um número:
-<form name="form1">
-  <input type="text" name="t1"><br>
-  Digite outro número:<br>
-  <input type="text" name="t2"><br><br>
-  <input type="button" name="b1" value="+" onClick="soma(form1)">
-  <input type="button" name="b2" value="-" onClick="sub(form1)">
-  <input type="button" name="b3" value="*">
-  <input type="button" name="b4" value="/">
-  <br><br>
-  <br>
-  
-</form>
- </h3>
- </div>
-</div>
+     </script>
+      </head>
+      
+      <body>
+      <center><h1>Calculadora <br><br> </h1>
+        <h3>
+      Digite um numero:
+      <form name="form1">
+        <input type="text" name="t1" class="border border-light rounded-2"><br>
+        Digite outro numero:<br>
+        <input type="text" name="t2" class="border border-light rounded-2"><br><br>
+        <input type="button" class="btn btn-outline-light name="b1" value="+" onClick="soma(form1)">
+        <input type="button" class="btn btn-outline-light name="b2" value="-" onClick="sub(form1)">
+        <input type="button" class="btn btn-outline-light name="b3" value="*" onClick="mult(form1)">
+        <input type="button" class="btn btn-outline-light name="b4" value="/"onClick="div(form1)">
+        
+      </form>
+       </h3>
+    
 
-</body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

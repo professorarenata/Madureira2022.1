@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("img/12.jpg");
+        }
+    </style>
+</head>
+
+
+<body class="container-fluid">
+
+    <h3 class="alert text-center">
+        Digite um número:
+        <form name="form1">
+            <input type="text" name="t1"><br>
+            Digite mais um número:<br>
+            <input type="text" name="t2"><br><br>
+            <input type="button" name="b1" value="+" onClick="soma(form1)">
+            <input type="button" name="b2" value="-" onClick="sub(form1)">
+            <input type="button" name="b2" value="*" onClick="mult(form1)">
+            <input type="button" name="b4" value="/" onclick="divi(form1)">
+            <br><br>
+        </form>
+    </h3>
+
+    <script>
+        function soma(form1) {
+            a = new Number(form1.t1.value);
+            b = new Number(form1.t2.value);
+            c = new Number(a + b);
+            alert("A some é: " + c)
+        }
+
+        function sub(form1) {
+            a = new Number(form1.t1.value);
+            b = new Number(form1.t2.value);
+            c = new Number(a - b);
+            alert("A subtração é:  " + c);
+        }
+        function mult(form1) {
+            a = new Number(form1.t1.value);
+            b = new Number(form1.t2.value);
+            c = new Number(a * b);
+            alert("A multiplicação é:  " + c);
+        }
+        function divi(form1) {
+            a = new Number(form1.t1.value);
+            b = new Number(form1.t2.value);
+            c = new Number(a / b);
+            alert("A subtração é:  " + c);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

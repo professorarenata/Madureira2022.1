@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Calculadora </title>
+  <link rel="stylesheet" href="">
+  <link rel="shortcurt icon" href="https://thumbs.dreamstime.com/b/%C3%ADcone-do-vetor-isolado-da-meia-lua-crescente-que-pode-ser-facilmente-modificado-ou-editado-213525106.jpg">
+
+  <style>
+    .fundo {
+      background-color: black;
+      color: #f00;
+      text-align: center;
+
+    }
+  </style>
+  <script>
+    function soma(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a + b);
+      alert("A soma dos números �:  " + c);
+    }
+
+    function sub(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a - b);
+      alert("A subtração dos números �:  " + c);
+    }
+    function mult(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a * b);
+      alert("A multiplicação dos números �:  " + c);
+    }
+    function div(form1) {
+      a = new Number(form1.t1.value);
+      b = new Number(form1.t2.value);
+      c = new Number(a / b);
+      alert("A divisão dos números �:  " + c);
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="fundo">
+
+
+    <h1>Calculadora Lua Vermelha <br><br> </h1>
+    <h3>
+      Digite um número:
+      <form name="form1">
+        <input type="text" name="t1"><br>
+        Digite outro número:<br>
+        <input type="text" name="t2"><br><br>
+        <input type="button" name="b1" value="+" onclick="soma(form1)">
+        <input type="button" name="b2" value="-" onclick="sub(form1)">
+        <input type="button" name="b3" value="*" onclick="mult(form1)">
+        <input type="button" name="b4" value="/" onclick="div(form1)">
+        <br><br>
+        <h2>Venha Me Desafiar!!!</h2>
+
+      </form>
+    </h3>
+    <section>
+      <marquee scroLLamount="25"><img
+          src="https://i.pinimg.com/originals/fb/6d/46/fb6d4634c6fddf8d1e8b2cc1c7faf3d2.gif"><img
+          src="https://c.tenor.com/pEPlAVwf2roAAAAi/carmen-san-diego.gif"><img
+          src="https://c.tenor.com/eEQ1sFcRXp8AAAAi/carmen-sand-diego.gif"></marquee>
+    </section>
+
+
+  </div>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

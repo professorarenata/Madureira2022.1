@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="cotainer-fluid">
+        <header>
+            <h1 class="alert alert-primary">
+                Calculadora
+            </h1>
+
+        </header>
+    </div>
+    <div class="container">
+        <section>
+            <center><div class="col-md-6 mt-4">
+                <label for="formGroupExampleInput" class="form-label">Example label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+              </div>
+              <div class="col-md-6 mt-4">
+                <label for="formGroupExampleInput2" class="form-labe">Another label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              </div>
+              <button class="btn btn-primary mt-3" type="submit" id="som">+</button>
+              <button class="btn btn-primary mt-3" type="submit" id="sub">-</button>
+              <button class="btn btn-primary mt-3" type="submit" id="multi">x</button>
+              <button class="btn btn-primary mt-3" type="submit" id="div">÷</button>
+
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        som.onclick=function(soma){
+           let x =  Number(formGroupExampleInput.value);
+           let y = Number(formGroupExampleInput2.value);
+           soma = Number(x+y)
+           document.write(soma)
+        }
+        sub.onclick=function(sub){
+            let x =  Number(formGroupExampleInput.value);
+           let y = Number(formGroupExampleInput2.value);
+           sub = Number(x-y)
+           document.write(sub)
+        }
+        multi.onclick=function(multi){
+            let x =  Number(formGroupExampleInput.value);
+           let y = Number(formGroupExampleInput2.value);
+           multi = Number(x*y)
+           document.write(multi)
+        }
+        div.onclick=function(div){
+            let x =  Number(formGroupExampleInput.value);
+           let y = Number(formGroupExampleInput2.value);
+           div = Number(x/y)
+           document.write(div)
+        }
+    
+        </script>
+  </body>
+</html>
